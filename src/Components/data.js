@@ -3,7 +3,6 @@ let quizdata=[
 
   // Exmple data for react quiz app 
 
-
   {
     id:1,
     quiz: "When ReactJS released?",
@@ -39,5 +38,7 @@ let quizdata=[
   },
 ]
 
-
+// export quizdata  
 export default quizdata;
+
+
