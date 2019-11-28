@@ -1,3 +1,6 @@
+
+
+
 import React, { Component, Fragment } from "react";
 import quizdata from './data'
 import Answer from "./Answer";
@@ -46,3 +49,6 @@ class Quiz extends Component{
 }
 
 export default Quiz;
+
+
+
