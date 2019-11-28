@@ -1,5 +1,7 @@
-import React, { Component, Fragment } from "react";
 
+
+
+import React, { Component, Fragment } from "react";
 class Answer extends Component {
  
 //  create state
@@ -19,18 +21,22 @@ class Answer extends Component {
   };
   
   render() {
-
-    
-
+   
     return (
+     
       <Fragment>
+     
         { this.state.Clickcheck ? this.state.Answers.map(ans => {
           return <button onClick={this.onAnswer}> {ans}</button>;
         }) : <button > {this.state.rightAnaswer}</button>  } 
 
       </Fragment>
+   
     );
   }
 }
 
 export default Answer;
+
+
+
