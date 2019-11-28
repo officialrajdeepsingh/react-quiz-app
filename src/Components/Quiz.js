@@ -13,18 +13,18 @@ class Quiz extends Component{
  
 
  setStatefunstion = () =>{
-  
+   
 //  use reactjs setState 
   this.setState( {
     dataQuestion:quizdata
   })
-  
-
 }
+ 
+ 
   componentDidMount(){
     this.setStatefunstion();
-
   }
+
 
   render() {
     return(
@@ -34,7 +34,7 @@ class Quiz extends Component{
          {
           this.state.dataQuestion.map( data => {
             console.log( data);
-          return <div key={ data.id} className=" mainDiv"> 
+          return <div key={ data.id} className="card"> 
                       <h2> { data.quiz}</h2> 
                      <Answer key={ data.id} rightAnaswer={ data.rightAnaswer} anwer={ data.FindAnswer} />
                  </div>
@@ -43,9 +43,7 @@ class Quiz extends Component{
         
       </Fragment>
     );
-
   }
-
 }
 
 export default Quiz;
